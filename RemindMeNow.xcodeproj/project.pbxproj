@@ -13,6 +13,14 @@
 		7ED4FFEF1B59B2840056070E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED4FFEE1B59B2840056070E /* Images.xcassets */; };
 		7ED4FFF21B59B2840056070E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED4FFF01B59B2840056070E /* LaunchScreen.xib */; };
 		7ED4FFFE1B59B2840056070E /* RemindMeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4FFFD1B59B2840056070E /* RemindMeNowTests.swift */; };
+		7EDA33BC1B5D5F2400A9FFF2 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA33BB1B5D5F2400A9FFF2 /* StyleConstants.swift */; };
+		7EDA33BE1B5D5F6200A9FFF2 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA33BD1B5D5F6200A9FFF2 /* NotesViewController.swift */; };
+		7EDA33C01B5D5F8E00A9FFF2 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA33BF1B5D5F8E00A9FFF2 /* NewNoteViewController.swift */; };
+		7EDA33C41B5D602400A9FFF2 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA33C31B5D602400A9FFF2 /* ReminderTableViewCell.swift */; };
+		7EDA33C61B5D604700A9FFF2 /* NewReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA33C51B5D604700A9FFF2 /* NewReminderTableViewCell.swift */; };
+		7EDA33C81B5D609200A9FFF2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA33C71B5D609200A9FFF2 /* Note.swift */; };
+		7EEC02821B5EF66F004AC47F /* NoteDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC02811B5EF66F004AC47F /* NoteDisplayViewController.swift */; };
+		F9EF3BF4B312DFFBC7A26D38 /* Pods_RemindMeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC663D34867563309709CF7 /* Pods_RemindMeNow.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BC663D34867563309709CF7 /* Pods_RemindMeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemindMeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C441255396177884AB832F3 /* Pods-RemindMeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindMeNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemindMeNow/Pods-RemindMeNow.release.xcconfig"; sourceTree = "<group>"; };
 		7ED4FFE21B59B2840056070E /* RemindMeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED4FFE61B59B2840056070E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED4FFE71B59B2840056070E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +46,14 @@
 		7ED4FFF71B59B2840056070E /* RemindMeNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindMeNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED4FFFC1B59B2840056070E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED4FFFD1B59B2840056070E /* RemindMeNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeNowTests.swift; sourceTree = "<group>"; };
+		7EDA33BB1B5D5F2400A9FFF2 /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
+		7EDA33BD1B5D5F6200A9FFF2 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		7EDA33BF1B5D5F8E00A9FFF2 /* NewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		7EDA33C31B5D602400A9FFF2 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		7EDA33C51B5D604700A9FFF2 /* NewReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReminderTableViewCell.swift; sourceTree = "<group>"; };
+		7EDA33C71B5D609200A9FFF2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		7EEC02811B5EF66F004AC47F /* NoteDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDisplayViewController.swift; sourceTree = "<group>"; };
+		EC73CA4F562B6C5BED4D6623 /* Pods-RemindMeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindMeNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemindMeNow/Pods-RemindMeNow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EF3BF4B312DFFBC7A26D38 /* Pods_RemindMeNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +81,8 @@
 				7ED4FFE41B59B2840056070E /* RemindMeNow */,
 				7ED4FFFA1B59B2840056070E /* RemindMeNowTests */,
 				7ED4FFE31B59B2840056070E /* Products */,
+				B7621020AB8CA8724EE4B7D5 /* Pods */,
+				D1ECBB4B81DEEC3E245D2C95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +98,10 @@
 		7ED4FFE41B59B2840056070E /* RemindMeNow */ = {
 			isa = PBXGroup;
 			children = (
+				7EDA33B71B5D5E0400A9FFF2 /* Constants */,
+				7EDA33B81B5D5E5400A9FFF2 /* ViewControllers */,
+				7EDA33B91B5D5E7900A9FFF2 /* Views */,
+				7EDA33BA1B5D5EB300A9FFF2 /* Entities */,
 				7ED4FFE71B59B2840056070E /* AppDelegate.swift */,
 				7ED4FFE91B59B2840056070E /* ViewController.swift */,
 				7ED4FFEB1B59B2840056070E /* Main.storyboard */,
@@ -112,6 +137,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7EDA33B71B5D5E0400A9FFF2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA33BB1B5D5F2400A9FFF2 /* StyleConstants.swift */,
+			);
+			name = Constants;
+			path = ../../Constants;
+			sourceTree = "<group>";
+		};
+		7EDA33B81B5D5E5400A9FFF2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC02811B5EF66F004AC47F /* NoteDisplayViewController.swift */,
+				7EDA33BD1B5D5F6200A9FFF2 /* NotesViewController.swift */,
+				7EDA33BF1B5D5F8E00A9FFF2 /* NewNoteViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7EDA33B91B5D5E7900A9FFF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA33C31B5D602400A9FFF2 /* ReminderTableViewCell.swift */,
+				7EDA33C51B5D604700A9FFF2 /* NewReminderTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7EDA33BA1B5D5EB300A9FFF2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA33C71B5D609200A9FFF2 /* Note.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B7621020AB8CA8724EE4B7D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC73CA4F562B6C5BED4D6623 /* Pods-RemindMeNow.debug.xcconfig */,
+				3C441255396177884AB832F3 /* Pods-RemindMeNow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1ECBB4B81DEEC3E245D2C95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC663D34867563309709CF7 /* Pods_RemindMeNow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ED400011B59B2840056070E /* Build configuration list for PBXNativeTarget "RemindMeNow" */;
 			buildPhases = (
+				4165DB4F7CCB0EEAECB654E3 /* Check Pods Manifest.lock */,
 				7ED4FFDE1B59B2840056070E /* Sources */,
 				7ED4FFDF1B59B2840056070E /* Frameworks */,
 				7ED4FFE01B59B2840056070E /* Resources */,
+				B237597F4B33E00E52D9CF60 /* Embed Pods Frameworks */,
+				DC0364FFA7E6493C1574CEF5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,12 +288,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4165DB4F7CCB0EEAECB654E3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B237597F4B33E00E52D9CF60 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemindMeNow/Pods-RemindMeNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0364FFA7E6493C1574CEF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemindMeNow/Pods-RemindMeNow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7ED4FFDE1B59B2840056070E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDA33C01B5D5F8E00A9FFF2 /* NewNoteViewController.swift in Sources */,
+				7EEC02821B5EF66F004AC47F /* NoteDisplayViewController.swift in Sources */,
+				7EDA33BE1B5D5F6200A9FFF2 /* NotesViewController.swift in Sources */,
 				7ED4FFEA1B59B2840056070E /* ViewController.swift in Sources */,
+				7EDA33BC1B5D5F2400A9FFF2 /* StyleConstants.swift in Sources */,
+				7EDA33C81B5D609200A9FFF2 /* Note.swift in Sources */,
+				7EDA33C41B5D602400A9FFF2 /* ReminderTableViewCell.swift in Sources */,
+				7EDA33C61B5D604700A9FFF2 /* NewReminderTableViewCell.swift in Sources */,
 				7ED4FFE81B59B2840056070E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +431,7 @@
 		};
 		7ED400021B59B2840056070E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC73CA4F562B6C5BED4D6623 /* Pods-RemindMeNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RemindMeNow/Info.plist;
@@ -305,6 +442,7 @@
 		};
 		7ED400031B59B2840056070E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C441255396177884AB832F3 /* Pods-RemindMeNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RemindMeNow/Info.plist;
@@ -402,6 +540,7 @@
 				7ED400031B59B2840056070E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ED400041B59B2840056070E /* Build configuration list for PBXNativeTarget "RemindMeNowTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +549,7 @@
 				7ED400061B59B2840056070E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ED4FFDD1B59B2840056070E /* Build configuration list for PBXProject "RemindMeNow" */ = {
 			isa = XCConfigurationList;
