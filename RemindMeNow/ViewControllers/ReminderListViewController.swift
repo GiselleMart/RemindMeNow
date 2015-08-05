@@ -9,6 +9,7 @@
 import UIKit
 import Realm
 import RealmSwift
+import FontAwesomeKit
 
 class ReminderListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -26,8 +27,26 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
     
     var reminders: Results<Reminder>! {
         didSet {
-            tableView.reloadData()
+            //tableView.reloadData()
         }
+    }
+    
+    // Swipe table view variables
+//    let checkIcon = FAKIonIcons
+    let checkIcon = FAKIonIcons.iosCheckmarkIconWithSize(30)
+    let closeIcon = FAKIonIcons.iosCloseIconWithSize(30)
+    let composeIcon = FAKIonIcons.iosComposeIconWithSize(30)
+    let clockIcon = FAKIonIcons.iosClockIconWithSize(30)
+    let greenColor = UIColor(red: 85.0/255, green: 213.0/255, blue: 80.0/255, alpha: 1)
+    let redColor = UIColor(red: 213.0/255, green: 70.0/255, blue: 70.0/255, alpha: 1)
+    let yellowColor = UIColor(red: 236.0/255, green: 223.0/255, blue: 60.0/255, alpha: 1)
+    let brownColor = UIColor(red: 182.0/255, green: 127.0/255, blue: 78.0/255, alpha: 1)
+    
+    var removeCellBlock: ((SBGestureTableView, SBGestureTableViewCell) -> Void)!
+    
+    func setupIcons() {
+        checkIcon.addAttribute(NSForegroundColorAttributeName, value: UIColor.whiteColor())
+        closeIcon.addAttribute(NSForegroundColorAttributeName, value: UIColor.whiteColor())
     }
     
     override func viewDidLoad() {
@@ -40,6 +59,25 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
         tableView.estimatedRowHeight = 129
         prototypeCell = tableView.dequeueReusableCellWithIdentifier("reminderCell") as? ReminderTableViewCell
         reminders = realm.objects(Reminder).sorted("reminderdate", ascending: false)
+        
+        removeCellBlock = {(tableView: SBGestureTableView, cell: SBGestureTableViewCell) -> Void in
+            let indexPath = tableView.indexPathForCell(cell)
+            
+            // setting variable reminder to be the reminder at indexpath.row and casting it as a remin3der OBJECT.
+            let reminder = self.reminders[indexPath!.row] as Reminder
+            
+            //self.objects.removeObjectAtIndex(indexPath!.row)
+            tableView.removeCell(cell, duration: 0.3, completion: nil)
+            
+            realm.write() {
+                realm.delete(reminder)
+            }
+            
+            println("cell is deleted")
+        }
+        
+       
+
     }
     
 
@@ -87,13 +125,13 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("reminderCell", forIndexPath: indexPath) as! ReminderTableViewCell
-    
         
         let aReminder = reminders[indexPath.row]
 
+        let size = CGSizeMake(30, 30)
+        cell.firstLeftAction = SBGestureTableViewCellAction(icon: checkIcon.imageWithSize(size), color: greenColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
         
-
-        
+        cell.firstRightAction = SBGestureTableViewCellAction(icon: composeIcon.imageWithSize(size), color: yellowColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
         cell.note = aReminder
 
     

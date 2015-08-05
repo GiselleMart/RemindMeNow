@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="27" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mtq-zf-m6I">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="27" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mtq-zf-m6I" customClass="SBGestureTableView" customModule="RemindMeNow" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="81" width="600" height="499"/>
                                 <color key="backgroundColor" red="0.80822368421052637" green="0.19140717774146646" blue="0.11164952591494162" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.99726256080621023" blue="0.97961868029306964" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,7 +110,6 @@
                                             <outlet property="dateLabel" destination="QBn-N4-SlR" id="CpO-rX-MdU"/>
                                             <outlet property="quote" destination="8sE-r0-cqn" id="hWr-PZ-jr1"/>
                                             <outlet property="titleLabel" destination="oUt-Tb-Csc" id="4ZK-Ib-WyS"/>
-                                            <segue destination="9L0-JR-R2E" kind="show" identifier="ShowExistingNote" id="5kd-Bq-EBn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -146,6 +145,7 @@
                     <connections>
                         <outlet property="searchBar" destination="fQh-PE-xyU" id="5nL-Pg-x7p"/>
                         <outlet property="tableView" destination="mtq-zf-m6I" id="LYA-qA-zxv"/>
+                        <segue destination="9L0-JR-R2E" kind="show" identifier="ShowExistingNote" id="7qQ-GA-CxL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6i-CA-nXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,7 +164,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dawn-landscape-sky-sunset" translatesAutoresizingMaskIntoConstraints="NO" id="1PI-4F-Ylx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dawn-landscape-sky-sunset" translatesAutoresizingMaskIntoConstraints="NO" id="1PI-4F-Ylx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-ja-Fb7">
@@ -220,6 +220,8 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="TZW-hG-hoK"/>
+                                <exclude reference="jCk-ih-6pt"/>
+                                <exclude reference="xG4-YN-mPy"/>
                             </mask>
                         </variation>
                     </view>
@@ -272,7 +274,7 @@
         <image name="dawn-landscape-sky-sunset" width="5133" height="3345"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5kd-Bq-EBn"/>
+        <segue reference="7qQ-GA-CxL"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

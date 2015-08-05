@@ -2,6 +2,15 @@ PODS:
   - Bolts/Tasks (1.2.0)
   - Bond (3.9.0)
   - ConvenienceKit (0.1.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
   - Parse (1.7.5.1):
     - Bolts/Tasks (>= 1.2.0)
   - ParseUI (1.1.4):
@@ -15,6 +24,10 @@ PODS:
 DEPENDENCIES:
   - Bond
   - ConvenienceKit
+  - FontAwesomeKit/FontAwesome
+  - FontAwesomeKit/FoundationIcons
+  - FontAwesomeKit/IonIcons
+  - FontAwesomeKit/Zocial
   - Parse
   - ParseUI
   - RealmSwift
@@ -23,6 +36,7 @@ SPEC CHECKSUMS:
   Bolts: d176cb1e0012175589e389a9db49b85e27787576
   Bond: 994ccc56aebfe2707d7b5e76f6d665a5beefa45b
   ConvenienceKit: 083548558dedc22a586c1e1fbf3aa217728715af
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   Parse: 7dd027063c30a010356ec67515aca7787512b0ef
   ParseUI: d1228541b02a36a7354c8f47747f5f7a89cf1ff0
   Realm: 2fdd0ae74f730e190384e0338d8a0d3654df8220

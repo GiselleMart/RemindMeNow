@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-RemindMeNow-FontAwesomeKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RemindMeNow-Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02F5050F53A9B985CEE243AC</key>
+		<key>0C98E44AAE58AAEF3E3319AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>20278716659E1BD23BAF8D01</key>
+		<key>21DCB8F383FAFA60133F064E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3EE9B2C5827F672029C7E61E</key>
+		<key>5C08CED67B01180F056FD677</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59EA4D702389CA1CE356B87B</key>
+		<key>66AC19720C9EFEE3FCD39C20</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>944F1023CB86B84B16FDEF4D</key>
+		<key>781DD4607BCFB4570F44F2BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3F943D42BBF6CB377745DE5</key>
+		<key>7B4575FC14A54E644D578A7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8559412868EA3C5CD61C8A7</key>
+		<key>A57EBF876A309587C0D2FD7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3F7FBCB0B88196B2950CD16</key>
+		<key>DC80118308EF53F77BEA7AC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C992238692D9011DEDECE46F</key>
+		<key>E2A443DA0F4232570972803A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD46A6B2CB41B597E435B244</key>
 		<dict>
 			<key>primary</key>
 			<true/>

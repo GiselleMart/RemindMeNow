@@ -8,7 +8,10 @@ platform :ios, '8.0'
 
 pod 'Parse'
 pod 'ParseUI'
-
+pod 'FontAwesomeKit/FontAwesome'
+pod 'FontAwesomeKit/FoundationIcons'
+pod 'FontAwesomeKit/Zocial'
+pod 'FontAwesomeKit/IonIcons'
 pod 'ConvenienceKit'
 pod 'Bond'
 pod 'RealmSwift'

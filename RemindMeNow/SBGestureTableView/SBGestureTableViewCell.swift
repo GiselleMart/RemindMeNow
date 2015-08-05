@@ -66,7 +66,8 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
             updateSideViews()
         }
     }
-    private var gestureTableView: SBGestureTableView!
+    
+    weak var gestureTableView: SBGestureTableView!
     private let panGestureRecognizer = UIPanGestureRecognizer()
     
     func setup() {
@@ -108,6 +109,7 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
             let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
             let velocity = panGestureRecognizer.velocityInView(self)
             let horizontalLocation = panGestureRecognizer.locationInView(self).x
+            println(gestureTableView)
             if fabs(velocity.x) > fabs(velocity.y)
                 && horizontalLocation > CGFloat(gestureTableView.edgeSlidingMargin)
                 && horizontalLocation < frame.size.width - CGFloat(gestureTableView.edgeSlidingMargin)
