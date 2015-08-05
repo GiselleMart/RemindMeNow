@@ -10,38 +10,17 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="147" y="220" width="187" height="40"/>
-                    <attributedString key="attributedText">
-                        <fragment content="RemindNow">
-                            <attributes>
-                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <font key="NSFont" size="34" name="HelveticaNeue"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="g05-Ly-fb8">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dawn-landscape-sky-sunset" translatesAutoresizingMaskIntoConstraints="NO" id="uS0-re-m7X">
+                    <rect key="frame" x="-8" y="0.0" width="488" height="513"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="g05-Ly-fb8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hqn-3v-5rP"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="g05-Ly-fb8" secondAttribute="bottom" id="NAf-kn-Txl"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Wl3-wA-p7L"/>
-                <constraint firstAttribute="trailing" secondItem="g05-Ly-fb8" secondAttribute="trailing" id="fpn-yS-fJV"/>
-                <constraint firstAttribute="centerY" secondItem="kId-c2-rCX" secondAttribute="centerY" id="kkj-gV-3OB"/>
-                <constraint firstItem="g05-Ly-fb8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sET-MN-BZs"/>
-            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="bg" width="1180" height="784"/>
+        <image name="dawn-landscape-sky-sunset" width="5133" height="3345"/>
     </resources>
 </document>

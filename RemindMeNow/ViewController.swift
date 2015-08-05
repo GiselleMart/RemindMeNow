@@ -6,19 +6,30 @@
 //  Copyright (c) 2015 Giselle Martinez. All rights reserved.
 //
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-            }
-
-
-}
+//import UIKit
+//
+//class ViewController: UIViewController {
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//            }
+//    
+//    func textFieldDidBeginEditing (textField:UITextField)
+//        {
+//    textField.placeholder = nil;
+//    }
+//    
+//    func textFieldDidEndEditing (textField:UITextField) {
+//    textField.placeholder = "hello";
+//    }
+//
+//
+//
+//}
+//
 

@@ -7,7 +7,10 @@
 //
 
 import UIKit
-
-class NewTableViewCell: UITableViewCell {
     
+
+class RemindenderDetailViewController: UIViewController {
+    var currentNote: Reminder?
+    
+
 }

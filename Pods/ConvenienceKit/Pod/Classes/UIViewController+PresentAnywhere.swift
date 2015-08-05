@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIViewController {
  
-  // Thanks to: https://gist.github.com/MartinMoizard/6537467
+ 
   public func presentViewControllerFromTopViewController(viewControllerToPresent: UIViewController, animated: Bool = false, completion: (() -> Void)? = nil) {
     if self is UINavigationController {
       let navigationController = self as! UINavigationController
