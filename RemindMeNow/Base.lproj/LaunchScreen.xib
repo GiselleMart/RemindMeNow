@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dawn-landscape-sky-sunset" translatesAutoresizingMaskIntoConstraints="NO" id="uS0-re-m7X">
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dawn-landscape-sky-sunset" translatesAutoresizingMaskIntoConstraints="NO" id="uS0-re-m7X">
                     <rect key="frame" x="-8" y="0.0" width="488" height="513"/>
                 </imageView>
             </subviews>

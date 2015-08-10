@@ -18,6 +18,7 @@ class ReminderDetailViewController: UIViewController {
     @IBOutlet weak var datepicker: UIDatePicker!
 
     override func viewDidLoad() {
+        //sself.remindercell.separatorColor = [UIColor,clearColor];
         super.viewDidLoad()
     }
     

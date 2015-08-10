@@ -27,7 +27,7 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
     
     var reminders: Results<Reminder>! {
         didSet {
-            //tableView.reloadData()
+        tableView.reloadData()
         }
     }
     
@@ -37,12 +37,13 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
     let closeIcon = FAKIonIcons.iosCloseIconWithSize(30)
     let composeIcon = FAKIonIcons.iosComposeIconWithSize(30)
     let clockIcon = FAKIonIcons.iosClockIconWithSize(30)
-    let greenColor = UIColor(red: 85.0/255, green: 213.0/255, blue: 80.0/255, alpha: 1)
+    let greenColor = UIColor(red: 193.0/255, green: 190.0/255, blue: 150.0/255, alpha: 100)
     let redColor = UIColor(red: 213.0/255, green: 70.0/255, blue: 70.0/255, alpha: 1)
-    let yellowColor = UIColor(red: 236.0/255, green: 223.0/255, blue: 60.0/255, alpha: 1)
+    let yellowColor = UIColor(red: 52.0/255, green: 88.0/255, blue: 130.0/255, alpha: 100)
     let brownColor = UIColor(red: 182.0/255, green: 127.0/255, blue: 78.0/255, alpha: 1)
     
     var removeCellBlock: ((SBGestureTableView, SBGestureTableViewCell) -> Void)!
+    var replaceCellBlock: ((SBGestureTableView, SBGestureTableViewCell) -> Void)!
     
     func setupIcons() {
         checkIcon.addAttribute(NSForegroundColorAttributeName, value: UIColor.whiteColor())
@@ -74,6 +75,13 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
             }
             
             println("cell is deleted")
+        }
+        
+        replaceCellBlock = {(tableView: SBGestureTableView, cell: SBGestureTableViewCell) -> Void in
+            let indexPath = tableView.indexPathForCell(cell)
+            
+            // The animation to replaceCell
+            tableView.replaceCell(cell, duration: 0.3, bounce: 0.3, completion: nil)
         }
         
        
@@ -131,7 +139,7 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
         let size = CGSizeMake(30, 30)
         cell.firstLeftAction = SBGestureTableViewCellAction(icon: checkIcon.imageWithSize(size), color: greenColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
         
-        cell.firstRightAction = SBGestureTableViewCellAction(icon: composeIcon.imageWithSize(size), color: yellowColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
+        cell.firstRightAction = SBGestureTableViewCellAction(icon: composeIcon.imageWithSize(size), color: yellowColor, fraction: 0.3, didTriggerBlock: replaceCellBlock)
         cell.note = aReminder
 
     
@@ -197,6 +205,7 @@ extension ReminderListViewController: UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         state = .SearchMode
+        //searchBar.textColor = UIColor.whiteColor()
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {

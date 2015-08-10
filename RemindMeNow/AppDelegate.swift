@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-       
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName:UIFont(name:"HelveticaNeue-Thin",size:24)!, NSForegroundColorAttributeName:UIColor.whiteColor()]
+        //NotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil) // types are UIUserNotificationType members
+        
         return true
     }
 
@@ -24,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
+        
             }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -35,7 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         
     }
-
 
 }
 
