@@ -15,7 +15,7 @@ class ReminderTableViewCell: SBGestureTableViewCell {
     // initialize the date formatter only once, using a static computed property
     static var dateFormatter: NSDateFormatter = {
         var formatter = NSDateFormatter()
-        formatter.dateFormat = "EEEE, MMMM d, yyyy"
+        formatter.dateFormat = "EEEE, MMM dd 'at' h:mm a"
         // MMM d, yyyy
         return formatter
         }()
@@ -29,7 +29,7 @@ class ReminderTableViewCell: SBGestureTableViewCell {
             if let note = note {
                 self.titleLabel?.text = note.title
                 var dateFormatter = NSDateFormatter()
-                dateFormatter.dateFormat = "EEEE, MMMM d, yyyy H:mm"
+                dateFormatter.dateFormat = "EEEE, MMM dd 'at' h:mm a"
                 self.dateLabel?.text = dateFormatter.stringFromDate(note.reminderdate)
                 self.quote.text = note.quote
             }

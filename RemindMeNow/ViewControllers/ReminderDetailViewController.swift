@@ -17,9 +17,12 @@ class ReminderDetailViewController: UIViewController {
 
     @IBOutlet weak var datepicker: UIDatePicker!
 
+    
     override func viewDidLoad() {
-        //sself.remindercell.separatorColor = [UIColor,clearColor];
+        
         super.viewDidLoad()
+    
+
     }
     
     
@@ -29,9 +32,10 @@ class ReminderDetailViewController: UIViewController {
     @IBOutlet weak var selectedDate: UITextField!
     
     @IBAction func datePickerAction(sender: AnyObject) {
+    
         
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMMM d, yyyy HH:mm"
+        dateFormatter.dateFormat = "MMM dd 'at' h:mm a"
         var strDate = dateFormatter.stringFromDate(myDatePicker.date)
         self.selectedDate.text = strDate
         
@@ -43,26 +47,39 @@ class ReminderDetailViewController: UIViewController {
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "Save" {
+        
 
             
+            let requiredDateComponents: NSCalendarUnit = .CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay | .CalendarUnitHour | .CalendarUnitMinute
+            let components = NSCalendar.currentCalendar().components(requiredDateComponents, fromDate: datepicker.date)
             
+            let stripedDate = NSCalendar.currentCalendar().dateFromComponents(components)
             
             let aReminder = Reminder()
             aReminder.title = titlefield.text
-            aReminder.reminderdate = datepicker.date
+            aReminder.reminderdate = stripedDate!
             aReminder.quote = quoteHelper.fetchRandomQuote()
                         
             let realm = Realm()
             realm.write {
                 realm.add(aReminder)
                 
-            //let Quote
+                var localNotification: UILocalNotification = UILocalNotification()
+//                localNotification.alertAction = "Testing notifications on iOS8"
+                localNotification.alertTitle = aReminder.title
+                localNotification.alertBody = aReminder.quote
+                localNotification.fireDate = aReminder.reminderdate
+                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+               
+                
+
+                
+        
                 
             }
             
-            
-        }
-        
-    }
+
+           }
     
+    }
 }

@@ -15,6 +15,7 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBOutlet weak var tableView: SBGestureTableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    
     var prototypeCell : ReminderTableViewCell?
     enum State {
         case DefaultMode
@@ -51,6 +52,18 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     override func viewDidLoad() {
+        for subView in self.searchBar.subviews
+        {
+            for subsubView in subView.subviews
+            {
+                if let textField = subsubView as? UITextField
+                {
+//                    textField.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("Search", comment: ""), attributes: [NSForegroundColorAttributeName: UIColor.whiteColor()])
+                    
+                    textField.textColor = UIColor.whiteColor()
+                }
+            }
+        }
         
         let realm = Realm()
         super.viewDidLoad()
@@ -69,6 +82,7 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
             
             //self.objects.removeObjectAtIndex(indexPath!.row)
             tableView.removeCell(cell, duration: 0.3, completion: nil)
+            cell.selectionStyle = .None
             
             realm.write() {
                 realm.delete(reminder)
@@ -77,11 +91,12 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
             println("cell is deleted")
         }
         
-        replaceCellBlock = {(tableView: SBGestureTableView, cell: SBGestureTableViewCell) -> Void in
+        replaceCellBlock = {(tableView: SBGestureTableView, cell: SBGestureTableViewCell) ->
+            Void in
             let indexPath = tableView.indexPathForCell(cell)
             
-            // The animation to replaceCell
-            tableView.replaceCell(cell, duration: 0.3, bounce: 0.3, completion: nil)
+            cell.selectionStyle = .None
+            tableView.replaceCell(cell, duration: 0.1, bounce: 0.1, completion: nil)
         }
         
        

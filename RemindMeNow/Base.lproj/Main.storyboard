@@ -28,11 +28,12 @@
                                 <color key="separatorColor" red="0.79806519832324108" green="0.76991578805444028" blue="0.80822368421052637" alpha="0.25" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" red="0.99063527960526321" green="0.98792347576412087" blue="0.97044482525866405" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search " id="fQh-PE-xyU">
+                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search Reminder" id="fQh-PE-xyU">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
                                         <outlet property="delegate" destination="aXd-zg-Q4v" id="ZMe-l3-iO3"/>
@@ -107,7 +108,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" red="0.9841077302631579" green="0.9841077302631579" blue="0.27031520350474808" alpha="0.12" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.9841077302631579" green="0.9841077302631579" blue="0.27031520350474808" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="QBn-N4-SlR" id="CpO-rX-MdU"/>
                                             <outlet property="quote" destination="8sE-r0-cqn" id="hWr-PZ-jr1"/>
@@ -133,11 +134,11 @@
                             <constraint firstItem="eVO-fP-e3c" firstAttribute="top" secondItem="9i3-Fx-uFy" secondAttribute="bottom" id="sZV-8A-jF1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Reflexio" id="WGa-N2-7J3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1Uq-Ag-HgS">
+                    <navigationItem key="navigationItem" title="Reflexio" id="IUp-el-TF4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TDD-aA-HUb">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="9L0-JR-R2E" kind="show" id="rKi-bi-pFo"/>
+                                <segue destination="9L0-JR-R2E" kind="show" id="VDW-CY-2Ad"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -192,7 +193,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time of Reminder" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-7a-aUv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click on time" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-7a-aUv">
                                 <rect key="frame" x="84" y="151" width="136" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.82000000000000006" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -280,7 +281,7 @@
         <image name="dawn-landscape-sky-sunset" width="5133" height="3345"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7qQ-GA-CxL"/>
+        <segue reference="VDW-CY-2Ad"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
 </document>

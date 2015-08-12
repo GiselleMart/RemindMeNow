@@ -15,8 +15,6 @@
 		7ED4FFFE1B59B2840056070E /* RemindMeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4FFFD1B59B2840056070E /* RemindMeNowTests.swift */; };
 		7ED565C41B790B3E0067635B /* Quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7ED565C31B790B3E0067635B /* Quotes.txt */; };
 		7ED565C61B790C5D0067635B /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED565C51B790C5D0067635B /* StreamReader.swift */; };
-		7ED565C81B7956FF0067635B /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED565C71B7956FF0067635B /* TodoItem.swift */; };
-		7ED565CA1B7959090067635B /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED565C91B7959090067635B /* TodoList.swift */; };
 		7ED74C431B62FA550033909A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED74C421B62FA550033909A /* Reminder.swift */; };
 		7ED7703B1B6042A00057F6E9 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED7703A1B6042A00057F6E9 /* ReminderListViewController.swift */; };
 		7ED7703D1B6042EB0057F6E9 /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED7703C1B6042EB0057F6E9 /* ReminderDetailViewController.swift */; };
@@ -58,8 +56,6 @@
 		7ED4FFFD1B59B2840056070E /* RemindMeNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeNowTests.swift; sourceTree = "<group>"; };
 		7ED565C31B790B3E0067635B /* Quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quotes.txt; sourceTree = "<group>"; };
 		7ED565C51B790C5D0067635B /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
-		7ED565C71B7956FF0067635B /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
-		7ED565C91B7959090067635B /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		7ED74C421B62FA550033909A /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		7ED7703A1B6042A00057F6E9 /* ReminderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		7ED7703C1B6042EB0057F6E9 /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
@@ -128,8 +124,6 @@
 				7EDA33B91B5D5E7900A9FFF2 /* Views */,
 				7EDA33BA1B5D5EB300A9FFF2 /* Entities */,
 				7ED4FFE71B59B2840056070E /* AppDelegate.swift */,
-				7ED565C71B7956FF0067635B /* TodoItem.swift */,
-				7ED565C91B7959090067635B /* TodoList.swift */,
 				7ED4FFE91B59B2840056070E /* ViewController.swift */,
 				7ED4FFEB1B59B2840056070E /* Main.storyboard */,
 				7ED4FFEE1B59B2840056070E /* Images.xcassets */,
@@ -386,7 +380,6 @@
 			files = (
 				7ED565C61B790C5D0067635B /* StreamReader.swift in Sources */,
 				7ED4FFEA1B59B2840056070E /* ViewController.swift in Sources */,
-				7ED565CA1B7959090067635B /* TodoList.swift in Sources */,
 				7ED8DE481B72887400B5A285 /* SBGestureTableView.swift in Sources */,
 				7ED8DE4A1B72887400B5A285 /* SBGestureTableViewCellAction.swift in Sources */,
 				7ED8DE491B72887400B5A285 /* SBGestureTableViewCell.swift in Sources */,
@@ -399,7 +392,6 @@
 				7ED74C431B62FA550033909A /* Reminder.swift in Sources */,
 				7EDA33C61B5D604700A9FFF2 /* NewReminderTableViewCell.swift in Sources */,
 				7ED4FFE81B59B2840056070E /* AppDelegate.swift in Sources */,
-				7ED565C81B7956FF0067635B /* TodoItem.swift in Sources */,
 				7ED8DE401B72822600B5A285 /* QuoteHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

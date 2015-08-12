@@ -15,8 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
+            UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        
         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName:UIFont(name:"HelveticaNeue-Thin",size:24)!, NSForegroundColorAttributeName:UIColor.whiteColor()]
-        //NotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil) // types are UIUserNotificationType members
+        //[snippet, caption="Register User Notification Settings"]
+        func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+            
+            application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
+                UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+            
+            return true
+        }
+
         
         return true
     }
