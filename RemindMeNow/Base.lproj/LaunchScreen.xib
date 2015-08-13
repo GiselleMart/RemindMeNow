@@ -10,17 +10,37 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dawn-landscape-sky-sunset" translatesAutoresizingMaskIntoConstraints="NO" id="uS0-re-m7X">
-                    <rect key="frame" x="-8" y="0.0" width="488" height="513"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reflecxio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owk-yl-TM8">
+                    <rect key="frame" x="193" y="66" width="160" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="iva-hW-mFU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="0jU-qW-vV2">
+                    <rect key="frame" x="115" y="138" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="3H1-dI-pXK"/>
+                        <constraint firstAttribute="height" constant="250" id="YcB-Dh-LLn"/>
+                    </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.10588235294117647" green="0.22352941176470589" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Owk-yl-TM8" secondAttribute="centerX" constant="-33" id="G44-tl-lY3"/>
+                <constraint firstAttribute="centerY" secondItem="Owk-yl-TM8" secondAttribute="centerY" constant="148" id="ee1-ag-Mtc"/>
+                <constraint firstItem="0jU-qW-vV2" firstAttribute="top" secondItem="Owk-yl-TM8" secondAttribute="bottom" constant="20" id="jjS-AG-TTp"/>
+                <constraint firstAttribute="centerX" secondItem="0jU-qW-vV2" secondAttribute="centerX" id="qto-iJ-i6i"/>
+                <constraint firstAttribute="centerY" secondItem="0jU-qW-vV2" secondAttribute="centerY" constant="-23" id="yyF-Xu-AxA"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="dawn-landscape-sky-sunset" width="5133" height="3345"/>
+        <image name="Group" width="803" height="817"/>
     </resources>
 </document>

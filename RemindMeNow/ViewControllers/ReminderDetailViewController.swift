@@ -51,6 +51,8 @@ class ReminderDetailViewController: UIViewController {
 
             
             let requiredDateComponents: NSCalendarUnit = .CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay | .CalendarUnitHour | .CalendarUnitMinute
+            
+            println(requiredDateComponents)
             let components = NSCalendar.currentCalendar().components(requiredDateComponents, fromDate: datepicker.date)
             
             let stripedDate = NSCalendar.currentCalendar().dateFromComponents(components)

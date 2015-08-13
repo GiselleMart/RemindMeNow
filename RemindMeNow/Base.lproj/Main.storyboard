@@ -134,7 +134,7 @@
                             <constraint firstItem="eVO-fP-e3c" firstAttribute="top" secondItem="9i3-Fx-uFy" secondAttribute="bottom" id="sZV-8A-jF1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Reflexio" id="IUp-el-TF4">
+                    <navigationItem key="navigationItem" title="Reflecxio" id="IUp-el-TF4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TDD-aA-HUb">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -155,7 +155,7 @@
             </objects>
             <point key="canvasLocation" x="635" y="3418"/>
         </scene>
-        <!--Reflexio-->
+        <!--Reflecxio-->
         <scene sceneID="hvN-FS-gpF">
             <objects>
                 <viewController id="9L0-JR-R2E" customClass="ReminderDetailViewController" customModule="RemindMeNow" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,30 +171,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-ja-Fb7">
-                                <rect key="frame" x="0.0" y="237" width="600" height="216"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <date key="date" timeIntervalSinceReferenceDate="459196260.60693902">
-                                    <!--2015-07-21 18:31:00 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="datePickerAction:" destination="9L0-JR-R2E" eventType="valueChanged" id="D3y-lN-xGs"/>
-                                </connections>
-                            </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title of Reminder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-ja-nWd">
-                                <rect key="frame" x="84" y="101" width="305" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title of Reminder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-ja-nWd">
+                                <rect key="frame" x="36" y="87" width="528" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.82000000000000006" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.97353297270420203" blue="0.97933285642835621" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4o8-bU-H5A"/>
-                                    <constraint firstAttribute="width" constant="305" id="Kh9-Kk-JSW"/>
                                 </constraints>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click on time" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-7a-aUv">
-                                <rect key="frame" x="84" y="151" width="136" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click on time" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-7a-aUv">
+                                <rect key="frame" x="36" y="132" width="103" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.82000000000000006" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -203,24 +192,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-ja-Fb7">
+                                <rect key="frame" x="0.0" y="170" width="600" height="162"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="459196260.60693902">
+                                    <!--2015-07-21 18:31:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="9L0-JR-R2E" eventType="valueChanged" id="D3y-lN-xGs"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Qgk-ja-Fb7" firstAttribute="leading" secondItem="1PI-4F-Ylx" secondAttribute="leading" id="0iM-IC-mZH"/>
-                            <constraint firstItem="ic2-ja-nWd" firstAttribute="top" secondItem="agC-hs-3Hz" secondAttribute="bottom" constant="37" id="3ET-Qf-bKk"/>
+                            <constraint firstItem="ic2-ja-nWd" firstAttribute="top" secondItem="agC-hs-3Hz" secondAttribute="bottom" constant="23" id="3ET-Qf-bKk"/>
                             <constraint firstItem="Qgk-ja-Fb7" firstAttribute="leading" secondItem="4PU-xN-nMN" secondAttribute="leading" id="9xG-hm-Fao"/>
                             <constraint firstItem="lv4-rv-coL" firstAttribute="top" secondItem="Qgk-ja-Fb7" secondAttribute="bottom" constant="103" id="By6-rI-Z39"/>
-                            <constraint firstItem="a4S-7a-aUv" firstAttribute="top" secondItem="ic2-ja-nWd" secondAttribute="bottom" constant="20" id="CSZ-f5-dhc"/>
+                            <constraint firstItem="a4S-7a-aUv" firstAttribute="top" secondItem="ic2-ja-nWd" secondAttribute="bottom" constant="15" id="CSZ-f5-dhc"/>
                             <constraint firstItem="1PI-4F-Ylx" firstAttribute="top" secondItem="4PU-xN-nMN" secondAttribute="top" id="Chi-rA-RrP"/>
                             <constraint firstItem="a4S-7a-aUv" firstAttribute="leading" secondItem="4PU-xN-nMN" secondAttribute="leadingMargin" constant="20" id="EXr-47-jzW"/>
                             <constraint firstItem="Qgk-ja-Fb7" firstAttribute="trailing" secondItem="1PI-4F-Ylx" secondAttribute="trailing" id="G4q-y6-tZj"/>
                             <constraint firstAttribute="bottom" secondItem="1PI-4F-Ylx" secondAttribute="bottom" id="Jqy-p4-gLQ"/>
                             <constraint firstAttribute="trailing" secondItem="1PI-4F-Ylx" secondAttribute="trailing" id="LBo-hR-hpa"/>
-                            <constraint firstItem="Qgk-ja-Fb7" firstAttribute="top" secondItem="a4S-7a-aUv" secondAttribute="bottom" constant="57" id="N2j-wy-xR5"/>
+                            <constraint firstItem="Qgk-ja-Fb7" firstAttribute="top" secondItem="a4S-7a-aUv" secondAttribute="bottom" constant="8" id="N2j-wy-xR5"/>
                             <constraint firstItem="ic2-ja-nWd" firstAttribute="leading" secondItem="4PU-xN-nMN" secondAttribute="leading" constant="84" id="TZW-hG-hoK"/>
                             <constraint firstItem="ic2-ja-nWd" firstAttribute="leading" secondItem="a4S-7a-aUv" secondAttribute="leading" id="bcp-uW-lcc"/>
                             <constraint firstItem="a4S-7a-aUv" firstAttribute="top" secondItem="ic2-ja-nWd" secondAttribute="bottom" constant="19" id="jCk-ih-6pt"/>
                             <constraint firstItem="ic2-ja-nWd" firstAttribute="leading" secondItem="4PU-xN-nMN" secondAttribute="leadingMargin" constant="20" id="l3T-uE-2k4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ic2-ja-nWd" secondAttribute="trailing" constant="20" id="rTU-rz-jUW"/>
                             <constraint firstItem="Qgk-ja-Fb7" firstAttribute="top" secondItem="a4S-7a-aUv" secondAttribute="bottom" constant="15" id="xG4-YN-mPy"/>
                         </constraints>
                         <variation key="default">
@@ -228,18 +228,19 @@
                                 <exclude reference="TZW-hG-hoK"/>
                                 <exclude reference="jCk-ih-6pt"/>
                                 <exclude reference="xG4-YN-mPy"/>
+                                <exclude reference="By6-rI-Z39"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Reflexio" id="ybh-7n-jVZ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dPk-f7-PpM">
+                    <navigationItem key="navigationItem" title="Reflecxio" id="ybh-7n-jVZ">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="dPk-f7-PpM">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="FaR-EH-ZHL" kind="unwind" identifier="Cancel" unwindAction="unwindSegue:" id="yce-mu-fL3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Txi-qH-5Dj" colorLabel="IBBuiltInLabel-Red">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="Txi-qH-5Dj" colorLabel="IBBuiltInLabel-Red">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="FaR-EH-ZHL" kind="unwind" identifier="Save" unwindAction="unwindSegue:" id="iIW-8x-LIa"/>
