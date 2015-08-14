@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EC838B01B7E5AFB006BAB24 /* EditReminderViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC838AF1B7E5AFB006BAB24 /* EditReminderViewControlller.swift */; };
 		7ED4FFE81B59B2840056070E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4FFE71B59B2840056070E /* AppDelegate.swift */; };
 		7ED4FFEA1B59B2840056070E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4FFE91B59B2840056070E /* ViewController.swift */; };
 		7ED4FFED1B59B2840056070E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED4FFEB1B59B2840056070E /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		2BC663D34867563309709CF7 /* Pods_RemindMeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemindMeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C441255396177884AB832F3 /* Pods-RemindMeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindMeNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemindMeNow/Pods-RemindMeNow.release.xcconfig"; sourceTree = "<group>"; };
+		7EC838AF1B7E5AFB006BAB24 /* EditReminderViewControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditReminderViewControlller.swift; sourceTree = "<group>"; };
 		7ED4FFE21B59B2840056070E /* RemindMeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED4FFE61B59B2840056070E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED4FFE71B59B2840056070E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				7ED7703A1B6042A00057F6E9 /* ReminderListViewController.swift */,
 				7ED7703C1B6042EB0057F6E9 /* ReminderDetailViewController.swift */,
+				7EC838AF1B7E5AFB006BAB24 /* EditReminderViewControlller.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				7ED8DE421B72829400B5A285 /* MyReflectionQuotes.swift in Sources */,
 				7ED7703D1B6042EB0057F6E9 /* ReminderDetailViewController.swift in Sources */,
 				7ED7703B1B6042A00057F6E9 /* ReminderListViewController.swift in Sources */,
+				7EC838B01B7E5AFB006BAB24 /* EditReminderViewControlller.swift in Sources */,
 				7EDA33BC1B5D5F2400A9FFF2 /* StyleConstants.swift in Sources */,
 				7EDA33C41B5D602400A9FFF2 /* ReminderTableViewCell.swift in Sources */,
 				7ED74C431B62FA550033909A /* Reminder.swift in Sources */,

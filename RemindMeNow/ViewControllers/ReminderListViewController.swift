@@ -32,6 +32,8 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
+    let realm = Realm()
+    
     // Swipe table view variables
 //    let checkIcon = FAKIonIcons
     let checkIcon = FAKIonIcons.iosCheckmarkIconWithSize(30)
@@ -98,15 +100,44 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
             cell.selectionStyle = .None
             tableView.replaceCell(cell, duration: 0.1, bounce: 0.1, completion: nil)
         }
-        
-       
-
     }
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-            }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "edit") {
+            println("Task is edited")
+            
+            // Gets the index path of the selected row
+            let selectedIndexPath = tableView.indexPathForSelectedRow()
+            
+            // This gets the selectedRow
+            let selectedRow = reminders[selectedIndexPath!.row]
+            //println("THIS IS SELECTED ROW \(selectedRow)")
+            
+            let targetVC = segue.destinationViewController as! EditReminderViewControlller
+            //println(targetVC.TitleofReminder.text)
+            
+            targetVC.titleOfReminder = selectedRow.title
+            //println(targetVC.titleOfReminder)
+            
+            targetVC.timeOfReminder = selectedRow.reminderdate
+            //println(targetVC.timeOfReminder)
+            
+            targetVC.editedReminder = selectedRow
+            
+            
+            
+//            targetVC.TitleofReminder.text = selectedRow.title
+            
+            
+            
+            
+        }
+    }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
        println(segue.identifier)
@@ -130,6 +161,24 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
             }
             
             reminders = realm.objects(Reminder).sorted("reminderdate", ascending: false) //2
+        }
+    }
+    
+    @IBAction func backToListFromEditing(segue: UIStoryboardSegue) {
+        if let identifier = segue.identifier {
+            switch identifier {
+                case "Save":
+                    println("FINISHED SAVING")
+                
+                    let source = segue.sourceViewController as! EditReminderViewControlller
+                
+                    source.saveReminder()
+                
+            default:
+                println("failed!")
+            }
+        
+            reminders = realm.objects(Reminder).sorted("reminderdate", ascending: false)
         }
     }
     
@@ -185,7 +234,8 @@ extension ReminderListViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedNote = reminders[indexPath.row]      //1
-        self.performSegueWithIdentifier("ShowExistingNote", sender: self)     //2
+        performSegueWithIdentifier("edit", sender: self)     //2
+        println("segue should be performed")
     }
 
     // 3

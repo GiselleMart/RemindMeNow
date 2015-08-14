@@ -148,7 +148,7 @@
                     <connections>
                         <outlet property="searchBar" destination="fQh-PE-xyU" id="5nL-Pg-x7p"/>
                         <outlet property="tableView" destination="mtq-zf-m6I" id="LYA-qA-zxv"/>
-                        <segue destination="9L0-JR-R2E" kind="show" identifier="ShowExistingNote" id="7qQ-GA-CxL"/>
+                        <segue destination="jJ1-a7-IzZ" kind="show" identifier="edit" id="Q9y-0L-Jol"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6i-CA-nXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,7 +247,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="datepicker" destination="Qgk-ja-Fb7" id="uS1-SO-5k9"/>
                         <outlet property="myDatePicker" destination="Qgk-ja-Fb7" id="ZDi-vE-KvF"/>
@@ -258,7 +258,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Je-00-Ip3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FaR-EH-ZHL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1403" y="3418"/>
+            <point key="canvasLocation" x="1471" y="3136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XOv-ba-HA4">
@@ -277,12 +277,110 @@
             </objects>
             <point key="canvasLocation" x="-154" y="3418"/>
         </scene>
+        <!--Reflecxio-->
+        <scene sceneID="fyy-SF-GmF">
+            <objects>
+                <viewController id="jJ1-a7-IzZ" customClass="EditReminderViewControlller" customModule="RemindMeNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4nI-Xr-hGx"/>
+                        <viewControllerLayoutGuide type="bottom" id="0oy-Rp-tRK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzE-3O-u6j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dawn-landscape-sky-sunset" translatesAutoresizingMaskIntoConstraints="NO" id="y2M-4p-Cbb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title of Reminder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="754-6X-MCh">
+                                <rect key="frame" x="36" y="87" width="528" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81999999999999995" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.97353297270000005" blue="0.97933285640000001" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="S9a-O6-tdr"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click on time" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kQQ-KG-KtV">
+                                <rect key="frame" x="36" y="132" width="103" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81999999999999995" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Imy-kF-nIS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="acx-Us-1EF">
+                                <rect key="frame" x="0.0" y="170" width="600" height="162"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="459196260.60693902">
+                                    <!--2015-07-21 18:31:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="acx-Us-1EF" firstAttribute="top" secondItem="kQQ-KG-KtV" secondAttribute="bottom" constant="8" id="2oh-Q7-jU5"/>
+                            <constraint firstItem="acx-Us-1EF" firstAttribute="top" secondItem="kQQ-KG-KtV" secondAttribute="bottom" constant="15" id="4Y1-Vf-mx4"/>
+                            <constraint firstItem="754-6X-MCh" firstAttribute="leading" secondItem="hzE-3O-u6j" secondAttribute="leadingMargin" constant="20" id="7mS-sr-tna"/>
+                            <constraint firstItem="y2M-4p-Cbb" firstAttribute="top" secondItem="hzE-3O-u6j" secondAttribute="top" id="Acl-pS-Psz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="754-6X-MCh" secondAttribute="trailing" constant="20" id="CyK-au-Pdj"/>
+                            <constraint firstItem="kQQ-KG-KtV" firstAttribute="top" secondItem="754-6X-MCh" secondAttribute="bottom" constant="19" id="Jae-Hm-nc9"/>
+                            <constraint firstItem="754-6X-MCh" firstAttribute="top" secondItem="4nI-Xr-hGx" secondAttribute="bottom" constant="23" id="P0b-UW-qk7"/>
+                            <constraint firstItem="0oy-Rp-tRK" firstAttribute="top" secondItem="acx-Us-1EF" secondAttribute="bottom" constant="103" id="UV5-UA-YPv"/>
+                            <constraint firstItem="kQQ-KG-KtV" firstAttribute="top" secondItem="754-6X-MCh" secondAttribute="bottom" constant="15" id="VWf-Nj-9Tb"/>
+                            <constraint firstItem="754-6X-MCh" firstAttribute="leading" secondItem="kQQ-KG-KtV" secondAttribute="leading" id="arZ-iG-AjT"/>
+                            <constraint firstAttribute="trailing" secondItem="y2M-4p-Cbb" secondAttribute="trailing" id="c3P-Ve-djL"/>
+                            <constraint firstItem="acx-Us-1EF" firstAttribute="leading" secondItem="y2M-4p-Cbb" secondAttribute="leading" id="gyC-sX-hr3"/>
+                            <constraint firstAttribute="bottom" secondItem="y2M-4p-Cbb" secondAttribute="bottom" id="hnV-5T-Mfq"/>
+                            <constraint firstItem="kQQ-KG-KtV" firstAttribute="leading" secondItem="hzE-3O-u6j" secondAttribute="leadingMargin" constant="20" id="kFn-hy-uL4"/>
+                            <constraint firstItem="acx-Us-1EF" firstAttribute="leading" secondItem="hzE-3O-u6j" secondAttribute="leading" id="o9G-Jo-g0S"/>
+                            <constraint firstItem="754-6X-MCh" firstAttribute="leading" secondItem="hzE-3O-u6j" secondAttribute="leading" constant="84" id="rfT-KS-CMc"/>
+                            <constraint firstItem="acx-Us-1EF" firstAttribute="trailing" secondItem="y2M-4p-Cbb" secondAttribute="trailing" id="xy0-wG-grQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rfT-KS-CMc"/>
+                                <exclude reference="Jae-Hm-nc9"/>
+                                <exclude reference="4Y1-Vf-mx4"/>
+                                <exclude reference="UV5-UA-YPv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Reflecxio" id="bHg-jD-9Hz">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="l4z-vu-mZ6">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="teo-7R-4vb" kind="unwind" identifier="Cancel" unwindAction="unwindSegue:" id="4GP-Gh-buw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="dVB-nm-ENo" colorLabel="IBBuiltInLabel-Red">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="teo-7R-4vb" kind="unwind" identifier="Save" unwindAction="backToListFromEditing:" id="fiA-Rt-8t7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="TimeofReminder" destination="kQQ-KG-KtV" id="5vq-X5-iYF"/>
+                        <outlet property="TitleofReminder" destination="754-6X-MCh" id="80y-8c-iyt"/>
+                        <outlet property="datePicker" destination="acx-Us-1EF" id="MEJ-2J-gkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Yj-t6-YZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="teo-7R-4vb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="3870"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dawn-landscape-sky-sunset" width="5133" height="3345"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="VDW-CY-2Ad"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
 </document>

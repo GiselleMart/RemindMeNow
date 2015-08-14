@@ -49,7 +49,7 @@ class ReminderDetailViewController: UIViewController {
         if segue.identifier == "Save" {
         
 
-            
+            //Stripping time
             let requiredDateComponents: NSCalendarUnit = .CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay | .CalendarUnitHour | .CalendarUnitMinute
             
             println(requiredDateComponents)
@@ -68,8 +68,8 @@ class ReminderDetailViewController: UIViewController {
                 
                 var localNotification: UILocalNotification = UILocalNotification()
 //                localNotification.alertAction = "Testing notifications on iOS8"
-                localNotification.alertTitle = aReminder.title
-                localNotification.alertBody = aReminder.quote
+                localNotification.alertTitle = aReminder.quote
+                localNotification.alertBody = aReminder.title
                 localNotification.fireDate = aReminder.reminderdate
                 UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
                
